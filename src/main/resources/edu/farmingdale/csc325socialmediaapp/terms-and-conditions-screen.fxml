@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.farmingdale.csc325socialmediaapp.TermsAndConditionsScreen">
+   <top>
+      <VBox prefHeight="85.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="58.0" prefWidth="672.0" text="Long Island Trail Finder™ ">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="665.0" text="Terms and Conditions">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox fx:id="answerBtnContainer" alignment="CENTER" disable="true" prefHeight="81.0" prefWidth="614.0" spacing="125.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#disagreenTermsAndCondiitonBtnClicked" prefHeight="60.0" prefWidth="164.0" text="I Disagree" />
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#agreenTermsAndCondiitonBtnClicked" prefHeight="60.0" prefWidth="164.0" text="I Agree" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox prefHeight="369.0" prefWidth="658.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="termsAndCondiitons" editable="false" onScrollFinished="#reviewedAllTermsAndConditionsTextArea" prefHeight="369.0" prefWidth="664.0" text="Effective Date: February 26, 2025&#10;&#10;1. Acceptance of Terms&#10;By accessing or using Long Island Trail Finder™ (the “Service”), you agree to be bound by these Terms and Conditions (the “Terms”). If you do not agree to these Terms, please do not use the Service.&#10;&#10;2. Changes to Terms&#10;Long Island Trail Finder™ reserves the right to update or modify these Terms at any time without prior notice. Your continued use of the Service after any changes constitutes your acceptance of the revised Terms.&#10;&#10;3. Eligibility&#10;The Service is intended for users who are at least 13 years old. By using the Service, you represent and warrant that you are at least 13 years of age and have the legal capacity to enter into these Terms.&#10;&#10;4. Account Registration and Security&#10;Registration: To access certain features, you may need to register for an account. You agree to provide accurate, current, and complete information.&#10;Security: You are responsible for safeguarding your account credentials. If you suspect unauthorized access, notify Long Island Trail Finder™ immediately.&#10;5. User Content&#10;Ownership: You retain ownership of any content you post (e.g., trail reviews, photos, comments).&#10;License: By submitting User Content, you grant Long Island Trail Finder™ a worldwide, non-exclusive, royalty-free, transferable license to use, reproduce, distribute, display, and perform your content in connection with the Service.&#10;Responsibility: You are solely responsible for your User Content. Long Island Trail Finder™ reserves the right to remove any content that violates these Terms.&#10;6. Prohibited Conduct&#10;You agree not to:&#10;&#10;Post illegal, harmful, or offensive content.&#10;Harass, abuse, or harm others.&#10;Impersonate another person or misrepresent your identity.&#10;Spam, distribute malware, or engage in fraudulent activities.&#10;Violate intellectual property or other rights of third parties.&#10;Long Island Trail Finder™ reserves the right to remove any content or suspend/terminate accounts that violate these provisions.&#10;&#10;7. Intellectual Property&#10;All content and materials provided on the Service, including but not limited to logos, graphics, and software, are the property of Long Island Trail Finder™ or its licensors. Unauthorized use is prohibited.&#10;&#10;8. Third-Party Links and Content&#10;The Service may contain links to third-party websites. Long Island Trail Finder™ does not endorse or control these sites and is not responsible for their content. Use at your own risk.&#10;&#10;9. Privacy&#10;Your privacy is important to us. Please review our Privacy Policy, which explains how we collect, use, and disclose your information.&#10;&#10;10. Disclaimer of Warranties&#10;The Service is provided “as is” and “as available” without warranties of any kind. Long Island Trail Finder™ disclaims all warranties, including but not limited to:&#10;&#10;Implied warranties of merchantability and fitness for a particular purpose.&#10;The accuracy, reliability, or availability of the Service.&#10;11. Limitation of Liability&#10;To the fullest extent permitted by law, Long Island Trail Finder™ and its affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or goodwill, arising from your use of the Service.&#10;&#10;12. Indemnification&#10;You agree to indemnify and hold harmless Long Island Trail Finder™ from any claims, damages, losses, or expenses resulting from your use of the Service or violation of these Terms.&#10;&#10;13. Termination&#10;We reserve the right to suspend or terminate your access to the Service at any time, with or without notice, for conduct that violates these Terms.&#10;&#10;14. Governing Law&#10;These Terms shall be governed by and construed in accordance with the laws of New York, without regard to its conflict of laws provisions.&#10;&#10;15. Dispute Resolution&#10;Any disputes shall be resolved through binding arbitration in accordance with the rules of [Arbitration Organization]. You waive the right to a jury trial or class action lawsuit.&#10;&#10;16. Miscellaneous&#10;Entire Agreement: These Terms constitute the entire agreement between you and Long Island Trail Finder™.&#10;Severability: If any provision is found invalid, the remaining provisions will remain in effect.&#10;No Waiver: Failure to enforce any right under these Terms does not waive that right." />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
