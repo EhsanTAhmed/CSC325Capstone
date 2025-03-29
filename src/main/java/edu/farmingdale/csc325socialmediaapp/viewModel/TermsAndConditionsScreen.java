@@ -1,4 +1,4 @@
-package edu.farmingdale.csc325socialmediaapp;
+package edu.farmingdale.csc325socialmediaapp.viewModel;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

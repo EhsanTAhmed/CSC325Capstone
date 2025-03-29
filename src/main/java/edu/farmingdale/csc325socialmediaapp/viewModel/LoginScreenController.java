@@ -1,4 +1,4 @@
-package edu.farmingdale.csc325socialmediaapp;
+package edu.farmingdale.csc325socialmediaapp.viewModel;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -24,8 +24,13 @@ public class LoginScreenController {
 
     @FXML
     void createAnAccountHyperlink(ActionEvent event) {
-
+        try {
+//            InitScreenController.getInstance().signUpBtnClicked(event);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
+
 
     @FXML
     void loginBtnClicked(ActionEvent event) {

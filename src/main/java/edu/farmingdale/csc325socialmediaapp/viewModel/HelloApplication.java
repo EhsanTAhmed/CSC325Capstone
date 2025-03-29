@@ -1,4 +1,4 @@
-package edu.farmingdale.csc325socialmediaapp;
+package edu.farmingdale.csc325socialmediaapp.viewModel;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,9 +11,8 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         try {
-            // Use a leading slash so the loader starts from the classpath root.
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/initial-screen.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("initial-screen.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(),600, 450);
             stage.setTitle("Long Island Trail Finders");
             stage.setScene(scene);
             stage.show();

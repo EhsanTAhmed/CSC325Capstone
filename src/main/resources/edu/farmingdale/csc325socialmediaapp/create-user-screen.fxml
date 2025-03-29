@@ -15,14 +15,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="727.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="edu.farmingdale.csc325socialmediaapp.CreateUserController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="451.0" minWidth="727.0" prefHeight="451.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.farmingdale.csc325socialmediaapp.viewModel.CreateUserController">
   <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.20001220703125" minWidth="10.0" prefWidth="40.59998779296875" />
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.20001220703125" minWidth="10.0" prefWidth="189.00003662109373" />
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.20001220703125" minWidth="10.0" prefWidth="155.39996337890625" />
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.20001220703125" minWidth="10.0" prefWidth="42.60001220703123" />
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="624.199951171875" minWidth="10.0" prefWidth="303.6000732421875" />
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="496.79998779296875" minWidth="10.0" prefWidth="25.999926757812545" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.20001220703125" minWidth="10.0" prefWidth="169.39998779296872" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.20001220703125" minWidth="10.0" prefWidth="147.99997558593748" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.20001220703125" minWidth="10.0" prefWidth="30.000036621093727" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="624.199951171875" minWidth="10.0" prefWidth="291.60004882812495" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="496.79998779296875" minWidth="10.0" prefWidth="55.59995117187498" />
   </columnConstraints>
   <rowConstraints>
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -39,7 +39,7 @@
       <RowConstraints maxHeight="60.60001220703123" minHeight="10.0" prefHeight="59.80002441406248" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+      <HBox fx:id="emailTextField" alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
          <children>
             <TextField prefHeight="30.0" prefWidth="312.0">
                <font>
@@ -50,7 +50,7 @@
       </HBox>
       <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
          <children>
-            <TextField prefHeight="30.0" prefWidth="310.0">
+            <TextField fx:id="fNameTextField" prefHeight="30.0" prefWidth="310.0">
                <font>
                   <Font size="14.0" />
                </font>
@@ -59,7 +59,7 @@
       </HBox>
       <HBox alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="272.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
          <children>
-            <TextField prefHeight="30.0" prefWidth="321.0">
+            <TextField fx:id="lNameTextField" prefHeight="30.0" prefWidth="321.0">
                <font>
                   <Font size="14.0" />
                </font>
@@ -71,7 +71,7 @@
       </HBox>
       <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
          <children>
-            <ComboBox prefHeight="26.0" prefWidth="318.0" />
+            <ComboBox fx:id="securityQuestionComboBox" prefHeight="26.0" prefWidth="318.0" />
          </children>
          <GridPane.margin>
             <Insets />
@@ -79,7 +79,7 @@
       </HBox>
       <HBox alignment="CENTER_RIGHT" prefHeight="46.0" prefWidth="499.0" GridPane.columnIndex="4" GridPane.rowIndex="6">
          <children>
-            <TextField prefHeight="30.0" prefWidth="319.0">
+            <TextField fx:id="securityAnswerTextField" prefHeight="30.0" prefWidth="319.0">
                <font>
                   <Font size="14.0" />
                </font>
@@ -88,7 +88,7 @@
       </HBox>
       <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="7">
          <children>
-            <TextField prefHeight="30.0" prefWidth="317.0">
+            <TextField fx:id="passwordTextField" prefHeight="30.0" prefWidth="317.0">
                <font>
                   <Font size="14.0" />
                </font>
@@ -97,7 +97,7 @@
       </HBox>
       <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="8">
          <children>
-            <TextField prefHeight="30.0" prefWidth="328.0">
+            <TextField fx:id="confirmPasswordTextField" prefHeight="30.0" prefWidth="328.0">
                <font>
                   <Font size="14.0" />
                </font>
@@ -111,7 +111,7 @@
       </HBox>
       <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
          <children>
-            <TextField prefHeight="30.0" prefWidth="312.0">
+            <TextField fx:id="usernameTextField" prefHeight="30.0" prefWidth="312.0">
                <font>
                   <Font size="14.0" />
                </font>
@@ -120,7 +120,7 @@
       </HBox>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.rowSpan="5">
          <children>
-            <ImageView fitHeight="190.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="logoImageView" fitHeight="190.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </VBox>
       <Label alignment="CENTER" prefHeight="36.0" prefWidth="197.0" text="Registration" GridPane.columnIndex="1" GridPane.rowIndex="6">
@@ -194,13 +194,13 @@
       </HBox>
       <HBox alignment="CENTER_RIGHT" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="10">
          <children>
-            <CheckBox mnemonicParsing="false" onAction="#termsAndConditionCheckBoxClicked" prefHeight="24.0" prefWidth="240.0" text="Check to confirm and you agree to the" />
+            <CheckBox fx:id="agreedToTermsAndConditionsCheckBox" mnemonicParsing="false" onAction="#termsAndConditionCheckBoxClicked" prefHeight="24.0" prefWidth="240.0" text="Check to confirm and you agree to the" />
             <Hyperlink onAction="#termsAndConditionHyperlinkClicked" prefHeight="26.0" prefWidth="155.0" text="Terms and Conditions">
                <font>
                   <Font size="14.0" />
                </font>
             </Hyperlink>
-            <Button disable="true" mnemonicParsing="false" onAction="#registerBtnClicked" prefHeight="45.0" prefWidth="87.0" style="-fx-background-radius: 40%;" text="Register">
+            <Button fx:id="registerBtn" disable="true" mnemonicParsing="false" onAction="#registerBtnClicked" prefHeight="45.0" prefWidth="87.0" style="-fx-background-radius: 40%;" text="Register">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -218,7 +218,7 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="35.0" prefWidth="107.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
          <children>
-            <Button mnemonicParsing="false" onAction="#backBtnClciked" prefHeight="35.0" prefWidth="62.0" style="-fx-background-radius: 40%;" text="Back">
+            <Button mnemonicParsing="false" onAction="#loginBtnClciked" prefHeight="35.0" prefWidth="62.0" style="-fx-background-radius: 40%;" text="Login">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>

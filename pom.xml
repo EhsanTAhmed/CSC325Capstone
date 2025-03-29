@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                edu.farmingdale.csc325socialmediaapp/edu.farmingdale.csc325socialmediaapp.HelloApplication
+                                edu.farmingdale.csc325socialmediaapp/edu.farmingdale.csc325socialmediaapp.viewModel.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

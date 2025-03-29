@@ -2,31 +2,33 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.farmingdale.csc325socialmediaapp.HomeScreenController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.farmingdale.csc325socialmediaapp.viewModel.HomeScreenController">
    <top>
-      <HBox prefHeight="65.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <HBox prefHeight="78.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <HBox prefHeight="82.0" prefWidth="151.0">
                <children>
-                  <ImageView fitHeight="110.0" fitWidth="146.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="110.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
                      <HBox.margin>
                         <Insets left="10.0" top="10.0" />
                      </HBox.margin>
+                     <image>
+                        <Image url="@images/hiking-outdoor-adventure-logo-template-vector-48574916.jpg" />
+                     </image>
                   </ImageView>
                </children>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="402.0">
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="402.0" spacing="40.0">
                <children>
                   <Button mnemonicParsing="false" text="Trails" />
                   <Button mnemonicParsing="false" text="post" />
                   <Button mnemonicParsing="false" text="Settings" />
                   <Button mnemonicParsing="false" text="Help &amp; support" />
-                  <Button mnemonicParsing="false" text="previous posts" />
                </children>
             </HBox>
          </children>
