@@ -12,7 +12,7 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         try {
             // Use a leading slash so the loader starts from the classpath root.
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/initial-screen.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/inital-screen.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 320, 240);
             stage.setTitle("Long Island Trail Finders");
             stage.setScene(scene);

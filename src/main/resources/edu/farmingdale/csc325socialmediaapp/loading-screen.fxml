@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="35.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.farmingdale.csc325socialmediaapp.LoadingScreen">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96ebff" height="150.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+      <Label layoutX="120.0" layoutY="40.0" prefHeight="28.0" prefWidth="66.0" text="LOADING..." />
+      <ProgressIndicator layoutX="123.0" layoutY="80.0" prefHeight="150.0" prefWidth="52.0" />
+   </children>
+</AnchorPane>
