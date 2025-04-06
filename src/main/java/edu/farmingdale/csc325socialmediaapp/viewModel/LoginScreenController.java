@@ -2,12 +2,16 @@ package edu.farmingdale.csc325socialmediaapp.viewModel;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 
-public class LoginScreenController {
+import java.util.Objects;
 
+public class LoginScreenController {
+    private String packagePath = "/edu/farmingdale/csc325socialmediaapp/";
     @FXML
     private PasswordField passwordTextField;
 
@@ -17,6 +21,8 @@ public class LoginScreenController {
     @FXML
     private TextField usernameTextField;
 
+    private BorderPane bp = InitScreenController.getInitScreenBorderPane();
+
     @FXML
     void ForgotPasswordHyperlink(ActionEvent event) {
 
@@ -25,7 +31,12 @@ public class LoginScreenController {
     @FXML
     void createAnAccountHyperlink(ActionEvent event) {
         try {
-//            InitScreenController.getInstance().signUpBtnClicked(event);
+            FXMLLoader fxmlLoader = new FXMLLoader(Objects.requireNonNull(HelloApplication.class.getResource(packagePath + "create-user-screen.fxml")));
+            GridPane signInGridPane = fxmlLoader.load();
+            bp.setCenter(signInGridPane);
+            bp.setMinHeight(signInGridPane.getHeight());
+            bp.setMinWidth(signInGridPane.getWidth());
+            bp.setBottom(null);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -34,7 +45,16 @@ public class LoginScreenController {
 
     @FXML
     void loginBtnClicked(ActionEvent event) {
-
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(Objects.requireNonNull(HelloApplication.class.getResource(packagePath + "home-screen.fxml")));
+            GridPane signInGridPane = fxmlLoader.load();
+            bp.setCenter(signInGridPane);
+            bp.setMinHeight(signInGridPane.getHeight());
+            bp.setMinWidth(signInGridPane.getWidth());
+            bp.setBottom(null);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }

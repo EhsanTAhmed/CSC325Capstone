@@ -11,13 +11,16 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class InitScreenController {
-
+    private String packagePath = "/edu/farmingdale/csc325socialmediaapp/";
     @FXML
     private ImageView imageViewMainMenu;
 
     @FXML
-    private BorderPane initScreenBorderPane;
+    private static BorderPane initScreenBorderPane;
 
+    public static BorderPane getInitScreenBorderPane(){
+        return initScreenBorderPane;
+    }
 //    @FXML
 //    public void initialize() {
 //        try {
@@ -32,7 +35,7 @@ public class InitScreenController {
     void loginBtnClicked(ActionEvent event) {
         try {
 
-            FXMLLoader fxmlLoader = new FXMLLoader(Objects.requireNonNull(HelloApplication.class.getResource("login-screen.fxml")));
+            FXMLLoader fxmlLoader = new FXMLLoader(Objects.requireNonNull(HelloApplication.class.getResource("/edu/farmingdale/csc325socialmediaapp/login-screen.fxml")));
             GridPane signInGridPane = fxmlLoader.load();
             initScreenBorderPane.setCenter(signInGridPane);
             initScreenBorderPane.setBottom(null);
@@ -48,13 +51,11 @@ public class InitScreenController {
     @FXML
     void signUpBtnClicked(ActionEvent event) {
         try {
-
-            FXMLLoader fxmlLoader = new FXMLLoader(Objects.requireNonNull(HelloApplication.class.getResource("create-user-screen.fxml")));
+            FXMLLoader fxmlLoader = new FXMLLoader(Objects.requireNonNull(HelloApplication.class.getResource("/edu/farmingdale/csc325socialmediaapp/create-user-screen.fxml")));
             GridPane signInGridPane = fxmlLoader.load();
             initScreenBorderPane.setCenter(signInGridPane);
             initScreenBorderPane.setMinHeight(signInGridPane.getHeight());
             initScreenBorderPane.setMinWidth(signInGridPane.getWidth());
-
             initScreenBorderPane.setBottom(null);
         } catch (IOException e) {
             e.printStackTrace();

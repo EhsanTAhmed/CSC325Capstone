@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class CreateUserController {
-
+    private String packagePath = "/edu/farmingdale/csc325socialmediaapp/";
     @FXML
     private CheckBox agreedToTermsAndConditionsCheckBox;
 
@@ -57,7 +57,7 @@ public class CreateUserController {
     @FXML
     void loginBtnClciked(ActionEvent event) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(Objects.requireNonNull(HelloApplication.class.getResource("create-user-screen.fxml")));
+            FXMLLoader fxmlLoader = new FXMLLoader(Objects.requireNonNull(HelloApplication.class.getResource("login-screen.fxml")));
             GridPane signInGridPane = fxmlLoader.load();
         } catch (IOException e) {
             e.printStackTrace();

@@ -18,7 +18,7 @@
                         <Insets left="10.0" top="10.0" />
                      </HBox.margin>
                      <image>
-                        <Image url="@images/hiking-outdoor-adventure-logo-template-vector-48574916.jpg" />
+                        <Image url="@../../../images/hiking-outdoor-adventure-logo-template-vector-48574916.jpg" />
                      </image>
                   </ImageView>
                </children>
